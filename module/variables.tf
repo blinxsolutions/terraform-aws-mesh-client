@@ -247,3 +247,9 @@ variable "aws_secrets_endpoints_sg_id" {
   type    = string
   default = ""
 }
+
+variable "fetch_message_chunk_lambda_memory_size" {
+  type    = number
+  default = 128
+  description = "memory size for the fetch message chunk lambda, if you are receiving large messages you may want to increase this"
+}
